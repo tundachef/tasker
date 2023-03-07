@@ -20,22 +20,11 @@ class InstallationRecipe
             'token' => 'required',
         ]);
 
-        $response = Http::post('https://spack-admin.codedott.com/api/verify-token', [
-            'token' => $request->token,
-        ]);
 
-        if ($response->successful()) {
-            Artisan::call('key:generate');
-            Artisan::call('migrate:fresh --seed --force');
-
-            Http::post('https://spack-admin.codedott.com/api/installation/status', [
-                'success' => true,
-                'token' => $request->token,
-            ]);
 
             return ['success' => true];
-        }
 
-        return ['success' => false, 'error' => 'We could not verify the token!'];
+
+        // return ['success' => false, 'error' => 'We could not verify the token!'];
     }
 }

@@ -39,11 +39,6 @@ class UpdateRecipe
             'new_version_update_token' => null,
         ]);
 
-        Http::post('https://spack-admin.codedott.com/api/installation/status', [
-            'success' => true,
-            'token' => $token,
-        ]);
-
         return [
             'success' => true,
             'status' => 'done',
