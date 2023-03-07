@@ -17,5 +17,7 @@ php artisan serve
 ```
 
 Then login using <br>
-*admin@example.com* <br>
-*password*
+```
+admin@example.com
+password
+```
