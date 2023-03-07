@@ -10,9 +10,11 @@ DB_PASSWORD=
 ```
 
 Run the following command (MUST)
-```php artisan key:generate```
-```php artisan migrate:fresh --seed```
-```php artisan serve``
+```
+php artisan key:generate
+php artisan migrate:fresh --seed
+php artisan serve
+```
 
 Then login using <br>
 *admin@example.com* <br>
