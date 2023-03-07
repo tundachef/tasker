@@ -43,9 +43,9 @@ class TestMail extends Notification
     {
         return (new MailMessage)
                     ->from($this->from ?? env('MAIL_FROM_ADDRESS'))
-                    ->line('This is a testing email for credentials verification for spack')
+                    ->line('This is a testing email for credentials verification for tasker')
                     ->action('Notification Action', url('/'))
-                    ->line('Thank you for using spack!');
+                    ->line('Thank you for using tasker!');
     }
 
     /**

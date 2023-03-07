@@ -4,8 +4,69 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe33f98a750b8c5a51b30c78bd3fab21",
+    "content-hash": "c6cf7279ae4771b87ef10b1c48109b19",
     "packages": [
+        {
+            "name": "ahsanabrar/support",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AhsanAbrar/support.git",
+                "reference": "3de1fa33f37e77fe712650baaf76b0431109141b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AhsanAbrar/support/zipball/3de1fa33f37e77fe712650baaf76b0431109141b",
+                "reference": "3de1fa33f37e77fe712650baaf76b0431109141b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^9.31",
+                "php": "^8.0.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.7",
+                "phpunit/phpunit": "^9.5"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AhsanDev\\Support\\Authorization\\AuthorizationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "AhsanDev\\Support\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Muhammad Ahsan Abrar",
+                    "email": "iahsanabrar@gmail.com"
+                }
+            ],
+            "description": "My Development Supportive Package.",
+            "keywords": [
+                "admin",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/AhsanAbrar/support/issues",
+                "source": "https://github.com/AhsanAbrar/support/tree/main"
+            },
+            "time": "2022-12-16T19:31:59+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.10.2",
@@ -980,6 +1041,66 @@
                 }
             ],
             "time": "2021-10-07T12:57:01+00:00"
+        },
+        {
+            "name": "laranext/span",
+            "version": "v0.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laranext/span.git",
+                "reference": "a2250b304594257a37ec89981747ec50e887467c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laranext/span/zipball/a2250b304594257a37ec89981747ec50e887467c",
+                "reference": "a2250b304594257a37ec89981747ec50e887467c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.4",
+                "orchestra/testbench": "^6.20",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laranext\\Span\\SpanCoreServiceProvider"
+                    ],
+                    "aliases": {
+                        "Span": "Laranext\\Span\\Span"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laranext\\Span\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Muhammad Ahsan Abrar",
+                    "email": "iahsanabrar@gmail.com"
+                }
+            ],
+            "description": "Laranext span is based on reusable plug and play system.",
+            "keywords": [
+                "admin",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laranext/span/issues",
+                "source": "https://github.com/laranext/span/tree/v0.1.5"
+            },
+            "time": "2022-02-13T07:47:53+00:00"
         },
         {
             "name": "laravel/framework",
@@ -7935,7 +8056,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "ahsanabrar/support": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
